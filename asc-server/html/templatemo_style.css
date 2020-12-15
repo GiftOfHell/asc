@@ -258,20 +258,20 @@ h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
 	height: 250px;
 	border: 1px solid #000;
 	border-radius: 5px;
-	margin-top: 22px;
 	background-color: white;
 	position: absolute;
 	padding: 5px;
 	display: none;
+	margin-top: -26px;
 }
 
 .tag {
 	font-size: 14px;
 	color: #fff;
 	font-weight: 700;
-	position: absolute;
-	left: 73.7%;
-	top: 7.7%;
+	position: relative;
+	left: 85%;
+    top: -26px;
 }
 
 .tag:hover + .bucket {
@@ -284,9 +284,8 @@ h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
 
 .date {
 	font-size: 20px;
-	position: absolute;
-	top: 47%;
-    left: 37%;
+	margin-top: -20px;
+	margin-bottom: 20px;
 }
 
 .order {

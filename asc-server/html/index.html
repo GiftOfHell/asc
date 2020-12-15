@@ -1,18 +1,161 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Welcome to Asclepie!</title>
-<style>
-    body {
-        width: 35em;
-        margin: 0 auto;
-        font-family: Tahoma, Verdana, Arial, sans-serif;
-    }
-</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>New Yeat Toys - Catalog</title>
+<meta name="keywords" content="Christmas Red, blog, css templates, CSS, HTML" />
+<meta name="description" content="Christmas Red | Blog Page - free CSS template provided by templatemo.com" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+
+
+
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/ddsmoothmenu.js">
+
+/***********************************************
+* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "templatemo_menu", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="stylesheet/styles.css" />
+<script language="javascript" type="text/javascript" src="scripts/mootools-1.2.1-core.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/mootools-1.2-more.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/slideitmoo-1.1.js"></script>
+<script language="javascript" type="text/javascript">
+	window.addEvents({
+		'domready': function(){
+			/* thumbnails example , div containers */
+			new SlideItMoo({
+						overallContainer: 'SlideItMoo_outer',
+						elementScrolled: 'SlideItMoo_inner',
+						thumbsContainer: 'SlideItMoo_items',		
+						itemsVisible: 3,
+						elemsSlide: 2,
+						duration: 200,
+						itemsSelector: '.SlideItMoo_element',
+						itemWidth: 280,
+						showControls:1});
+		},
+		
+	});
+</script>
+    
 </head>
-<body>
-<p><!--# echo var="date_local"--></p>
-<p><!--# include virtual="/toys"--></p>
-<p><!--# include virtual="/bucket"--></p>
+<body id="home">
+
+<div id="templatemo_outer_wrapper">
+	<div id="templatemo_wrapper">
+    
+    	<div id="templatemo_header">
+            <div id="site_title"><h1><a href="#" target="_parent">Free CSS Templates</a></h1></div>
+            <div id="templatemo_menu" class="ddsmoothmenu">
+                <ul>
+                    <li><a href="#"><span></span>Home</a></li>
+                    <li><a href="#"><span></span>About</a>
+                      	<ul>
+                        	<li><a href="#">Item One</a></li>
+                        	<li><a href="#">Item Two</a></li>
+                        	<li><a href="#">Item Three</a></li>
+                    	</ul>
+                    </li>
+                    <li><a href="#"><span></span>Portfolio</a>
+                      	<ul>
+                            <li><a href="#">Page One</a></li>
+                            <li><a href="#">Page Two</a></li>
+                            <li><a href="#">Page Three</a></li>
+                            <li><a href="#">Page Four</a></li>
+                            <li><a href="#">Page Five</a></li>
+                        </ul>
+                    </li>
+                  	<li><a href="#" class="selected"><span></span>Catalog</a></li>
+                    <li><a href="#"><span></span>Bucket</a></li>
+                </ul>
+                <p class="tag"><span></span>Bucket</p>
+                <div class="bucket">
+                    <p><!--# include virtual="/bucket"--></p>
+                </div>
+                <br style="clear: left" />
+            </div> <!-- end of templatemo_menu -->
+            <div class="cleaner"></div>
+            
+        </div> <!-- end of templatemo header -->
+
+        <div id="intro_text"><img src="images/templatemo_mc.png" alt="Merry Christmas" /></div>
+        
+        <div id="templatemo_main">
+        
+        	<div id="content">
+                <div class="date">
+                    <p><!--# echo var="date_local"--></p>
+                </div>
+                <p><!--# include virtual="/toys"--></p>             
+            <div class="cleaner"></div>
+            <div class="pagging">
+            	<ul>
+                	<li><a href="#" target="_parent">Previous</a></li>
+                    <li><a href="#" target="_parent">1</a></li>
+                    <li><a href="#" target="_parent">2</a></li>
+                    <li><a href="#" target="_parent">3</a></li>
+                    <li><a href="#" target="_parent">4</a></li>
+                    <li><a href="#" target="_parent">5</a></li>
+                    <li><a href="#" target="_parent">6</a></li>
+                    <li><a href="#" target="_parent">Next</a></li>
+				</ul>
+            </div>
+          </div>
+            
+            <div id="sidebar">
+            	<h4>Categories</h4>
+                <div class="sidebar_box">
+                    <ul class="tmo_list">
+                        <li><a href="#">Aliquam pretium porta odio</a></li>
+                        <li><a href="#">Praesent adipiscing</a></li>
+                        <li><a href="#">Quisque dictum pharetra</a></li>
+                        <li><a href="#">Fusce quis diam sit amet</a></li>
+                    </ul>
+                </div>
+                
+                <div class="cleaner_h20"></div>
+
+                <div class="cleaner_h20"></div>
+                
+                <h4>Quick Contact</h4>
+                <div class="sidebar_box">
+                    <blockquote>
+                        <p> In velit urna, convallis id, pharetra in, iaculis sit amet, mi.   Praesent consectetur imperdiet mauris.</p>
+                        
+                      <cite><a href="#">John</a> - <span>Web Designer</span></cite>            </blockquote>
+                </div>
+            </div>
+            
+            <div class="cleaner"></div>
+            
+        </div>
+    
+    </div> <!-- end of templatemo_wrapper -->
+</div> <!-- end of templatemo_outer_wrapper -->
+
+<div id="templatemo_footer_wrapper">
+	<div id="templatemo_footer">
+        Copyright © 2020 <a href="#">New Yeat Toys</a>
+        <div class="cleaner"></div>
+    </div>
+</div>
 </body>
 </html>

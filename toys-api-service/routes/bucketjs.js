@@ -8,6 +8,8 @@ jsf.extend('chance', () => chance);
 
 var schema = {
 	"type": "array",
+	"minItems": 1,
+	"maxItems": 1,
 	"items": {
 		type: 'object',
 		properties: {

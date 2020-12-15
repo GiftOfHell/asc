@@ -1,5 +1,19 @@
 <div>
-	{% for key, value in pairs(items) do %}
-		<li> status: {{value["status"]}}, value: {{value["name"]}}, age: {{value["age"]}}, in: {{value["time"]}} min</li>
-	{% end %}
+    {% for key, value in pairs(items) do %}
+<div class="post_box">
+	<a href="#"><img src="images/templatemo_image_06.jpg" alt="Image" /></a>
+<h2>Name of this toy: {{value["name"]}}</h2>
+	<p>Vestibulum adipiscing tempus elit eu condimentum. Fusce at mi felis. Etiam sed velit nibh. Nunc bibendum justo nec eros elementum auctor.</p>
+	   <div class="post_bottom">
+		   <span class="cat">
+			  Price: {{value["price"]}}$
+			  Made in: {{value["country"]}}
+		   </span>
+		   <span class="order">
+			   <a href="#">Order</a>
+		   </span>
+	  </div>
+	  <div class="cleaner"></div>
+</div>
+  {% end %}
 </div>

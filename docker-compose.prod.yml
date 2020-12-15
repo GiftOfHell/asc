@@ -2,7 +2,7 @@ version: '3.7'
 services:
   asc-service:
     build:
-      context: asc-service
+      context: toys-api-service
       dockerfile: Dockerfile
     networks:
       private:

@@ -1,39 +1,39 @@
 version: '3.7'
 services:
-  as-readiness:
+  asc-service:
     build:
-      context: readiness-api-service
+      context: asc-service
       dockerfile: Dockerfile
     networks:
       private:
         # the aliases are not required, but are useful if the applications want to internally
         # reference each other by host name
         aliases:
-        - "as-readiness"
+        - "asc-service"
       public:
     ports:    
       - "3002:3002"   
 
-  as-nginx:
+  asc-nginx:
     build:
-      context: readiness-server
+      context: asc-server
       dockerfile: Dockerfile
     depends_on:
-      - "as-readiness"   
+      - "asc-service"   
     networks:
       private:
         # the aliases are not required, but are useful if the applications want to internally
         # reference each other by host name
         aliases:
-        - "as-nginx"
+        - "asc-nginx"
       public:
     ports:    
       - "8080:80"  
     volumes:
-      - ./readiness-server/html:/usr/local/openresty/nginx/html
-      - ./readiness-server/templates:/usr/local/openresty/nginx/templates
-      - ./readiness-server/conf/nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf 
-      - ./readiness-server/conf/conf.d/default.conf:/etc/nginx/conf.d/default.conf
+      - ./asc-server/html:/usr/local/openresty/nginx/html
+      - ./asc-server/templates:/usr/local/openresty/nginx/templates
+      - ./asc-server/conf/nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf 
+      - ./asc-server/conf/conf.d/default.conf:/etc/nginx/conf.d/default.conf
       # this differs from a normal -v folder mount to maintaine with/out traefik 
 
 networks:

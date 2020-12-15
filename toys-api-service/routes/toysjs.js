@@ -11,22 +11,50 @@ var schema = {
 	"items": {
 		type: 'object',
 		properties: {
-			name: {
+			name1: {
 				type: 'string',
 				faker: 'name.firstName'
 			},
-			price: {
+			name2: {
+				type: 'string',
+				faker: 'name.firstName'
+			},
+			name3: {
+				type: 'string',
+				faker: 'name.firstName'
+			},
+			price1: {
 				type: 'integer',
 				minimum: 5,
 				maximum: 99,
 				exclusiveMinimum: false
 			},
-			country: {
+			price2: {
+				type: 'integer',
+				minimum: 5,
+				maximum: 99,
+				exclusiveMinimum: false
+			},
+			price3: {
+				type: 'integer',
+				minimum: 5,
+				maximum: 99,
+				exclusiveMinimum: false
+			},
+			country1: {
+				type: 'string',
+				faker: 'address.country'
+			},
+			country2: {
+				type: 'string',
+				faker: 'address.country'
+			},
+			country3: {
 				type: 'string',
 				faker: 'address.country'
 			}
 		},
-		required: ['name', 'price', 'country']
+		required: ['name1', 'name2', 'name3', 'price1', 'price2', 'price3', 'country1', 'country2', 'country3']
 	}
 };
 
